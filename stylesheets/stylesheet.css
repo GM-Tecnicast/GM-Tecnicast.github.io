@@ -334,10 +334,32 @@ footer a:hover {
   visibility: hidden;
   content: '.';
 }
-
+* {padding:0; margin:0;}
+	body {font-family: Sans-Serif;}
+	img {max-width: 100%;}
+	.cycle-slideshow {
+	width: 100%;
+	max-width: 1080px;
+	display: block;
+	position: relative;
+	margin:20px auto;
+	overflow: hidden;	
+	}
+	.cycle-prev, .cycle-next {
+		font-size: 200%;
+		color: #FFF;
+		display: block;
+		position: absolute;
+		top: 50%;
+		margin-top: -16px;
+		z-index: 9999;
+	}
+	.cycle-prev {left: 10%;}
+	.cycle-next {right: 10%;}
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
+
 
 /* #Media Queries
 ================================================== */
